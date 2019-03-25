@@ -1,10 +1,12 @@
 /* ////////////////////////////////////////
 GLOBAL
 ////////////////////////////////////////// */
-html{
+body{
     background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-656955.jpg) no-repeat center center fixed; 
     background-size: cover;
+   
   }
+
 /* ////////////////////////////////////////
 HEADER
 ////////////////////////////////////////// */
@@ -23,16 +25,16 @@ header h1{
 INSTRUCTIONS
 ////////////////////////////////////////// */
 .instructions{
-    background:white;
-    text-align:center;
-    display:block;
-    width:30%;
-    padding:10px;
-    border-radius:15px;
-    border:solid black 3px;
-    display:flex;
-margin-left:35%;
-margin-right:35%;
+  background:white;
+  text-align:center;
+  display:block;
+  /* width:30%; */
+  padding:10px;
+  border-radius:15px;
+  border:solid black 3px;
+  /* display:flex; */
+  /* margin-left:35%;
+  margin-right:35%; */
 }
 
 .instructions h2{
@@ -42,6 +44,16 @@ margin-right:35%;
 .instructions p{
     font-family: 'Overlock', cursive;
     font-weight:500;
+    margin-bottom:0;
+}
+
+#start-button{
+  font-family: 'Permanent Marker', cursive;
+  margin-top:10px;
+  border-radius:15px;
+  background-color:rgb(165, 165, 165);
+  color:black;
+  width:125px;
 }
 /* ////////////////////////////////////////
 SELECTIONS
@@ -50,13 +62,13 @@ SELECTIONS
     background:white;
     text-align:center;
     display:block;
-    width:30%;
+    /* width:20%; */
     padding:10px;
     border-radius:15px;
     border:solid black 3px;
-    /* display:flex; */
-margin-left:35%;
-margin-right:35%;
+    display:none;
+/* margin-left:35%;
+margin-right:35%; */
 }
 .selections h2{
     font-family: 'Permanent Marker', cursive;
@@ -65,6 +77,7 @@ margin-right:35%;
 .selections p{
     font-family: 'Overlock', cursive;
     font-weight:500;
+    margin-bottom:0;
 }
 
 /* ////////////////////////////////////////
@@ -78,9 +91,9 @@ SCOREBOARD
     padding:10px;
     border-radius:15px;
     border:solid black 3px;
-    /* display:flex; */
-margin-left:35%;
-margin-right:35%;
+    display:none;
+/* margin-left:35%;
+margin-right:35%; */
 }
 
 .scoreboard h2{
@@ -90,6 +103,7 @@ margin-right:35%;
 .scoreboard p{
     font-family: 'Overlock', cursive;
     font-weight:500;
+    margin-bottom:0;
 }
 
 /* ////////////////////////////////////////
@@ -134,3 +148,11 @@ footer {
     margin-bottom: 10px;
     width: 35px;
   }
+
+
+  @media (max-width: 767.98px) {
+
+  header h1{
+    font-size:50px;
+  }
+   }

@@ -4,11 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
-
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="assets/images/rps_favicon.jpg">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Carter+One|Fredoka+One|Overlock|Permanent+Marker" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Anton|Carter+One|Fredoka+One|Overlock|Permanent+Marker"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
@@ -19,44 +27,63 @@
         ------------------------------------>
   <header>
     <h1>Rock Paper Scissors!</h1>
-
   </header>
   <!------------------------------------------
         Section 
         ------------------------------------>
-  <section>
 
-    <div class="instructions">
-      <h2>Instructions:</h2>
-      <p>Press either R, P, or S to make your guess and start playing. See if you can beat the computer!</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="instructions">
+          <h2>Instructions:</h2>
+          <p>Press either R, P, or S to make your guess and start playing. </p>
+          <p>See if you can beat the computer!</p>
+          <button id="start-button">Lets Go!</button>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1 gutter"></div>
+    <div class="col-md-4 scoreboard">
+      <h2>Scoreboard:</h2>
+
+      <p>Wins: <span id="wins-text"></span></p>
+      <p>Loses: <span id="losses-text"></span></p>
+      <p>Ties: <span id="ties-text"></span></p>
+
     </div>
 
-    <div class="selections">
+    <div class="col-md-2 gutter"></div>
+    <div class="col-md-4 selections">
       <h2>Selections:</h2>
       <p id="directions-text">Press r, p or s to start playing!</p>
       <p id="userchoice-text"></p>
       <p id="computerchoice-text"></p>
     </div>
+    <div class="col-md-1 gutter"></div>
 
-    <div class="scoreboard">
-      <h2>Scoreboard</h2>
-      <p id="wins-text"></p>
-      <p id="losses-text"></p>
-      <p id="ties-text"></p>
-    </div>
-  </section>
+  </div>
+  </div>
+
   <!------------------------------------------
         Footer 
         ------------------------------------>
   <footer>
     <div class="footer-container">
       <a href="https://github.com/guthriet1230"><img id="github" src="assets/images/Footer/GithubLogo.png"></a>
-      <a href="https://www.linkedin.com/in/tyler-guthrie-0a608857/"><img id="linkedin" src="assets/images/Footer/LinkedinLogo.jpg"></a>
+      <a href="https://www.linkedin.com/in/tyler-guthrie-0a608857/"><img id="linkedin"
+          src="assets/images/Footer/LinkedinLogo.jpg"></a>
       <a href="mailto:guthriet1230@gmail.com"><img id="gmail" src="assets/images/Footer/GmailLogo.png"></a>
     </div>
   </footer>
 </body>
 
 <script src="assets/javascript/javascript.js"></script>
+
 
 </html>
