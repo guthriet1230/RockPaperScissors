@@ -106,6 +106,10 @@ margin-right:35%; */
     margin-bottom:0;
 }
 
+#scoreboard-selections{
+  margin-top:5%;
+}
+
 /* ////////////////////////////////////////
 FOOTER
 ////////////////////////////////////////// */
@@ -155,4 +159,20 @@ footer {
   header h1{
     font-size:50px;
   }
+
+  div#scoreboard{
+
+width:90%;
+margin:auto;
+margin-top:20px;
+
+  }
+
+  div#selections{
+  
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+  }
+
    }
